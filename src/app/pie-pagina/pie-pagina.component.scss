@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.footer {
+  width: 100%;
+  background: olive;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: flex-end;
+  .logo {
+    width: 25%;
+
+    img {
+      width: 100%;
+      height: 45px;
+    }
+  }
+
+  .menu {
+    width: 45%;
+
+  }
+}

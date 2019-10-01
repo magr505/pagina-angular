@@ -1,0 +1,17 @@
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  .header{
+    align-self: flex-start;
+    width: 100%;
+  }
+  .inicio{
+    /*width: 100%;*/
+    /*min-height: 80vh;*/
+  }
+  .footer{
+    align-self: flex-end;
+  }
+}
+

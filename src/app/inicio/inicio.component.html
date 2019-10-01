@@ -1,0 +1,131 @@
+<!--<div class="carr">
+  <div class="row">
+    <div class="col">
+      <div class="carousel slide" id="slideshow" data-ride="carousel">
+        &lt;!&ndash; Indicadores&ndash;&gt;
+        <ol class="carousel-indicators">
+          <li data-target="#slideshow" class="active" data-slide-to="0"></li>
+          <li data-target="#slideshow" data-slide-to="1"></li>
+          <li data-target="#slideshow" data-slide-to="2"></li>
+          <li data-target="#slideshow" data-slide-to="3"></li>
+        </ol>
+
+        &lt;!&ndash; Slides &ndash;&gt;
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://cdn4.cnet.com/img/IiGcpqSRmczi3l7tQXdCsOaxOQA=/2016/11/17/23fbdaa1-07f3-4398-9a21-baf0a5354fef/wiiu-zelda-link.png" alt="" class="d-block w-50"> &lt;!&ndash;class="d-block w-100">&ndash;&gt;
+          </div>
+          <div class="carousel-item">
+            <img src="https://as.com/epik/imagenes/2019/04/20/portada/1555711804_942369_1555711892_noticia_normal.jpg" alt="" class="d-block w-50">&lt;!&ndash;class="d-block w-100">&ndash;&gt;
+          </div>
+          <div class="carousel-item">
+            <img src="http://ondacero.com.pe/j/images/galerias/2018-09-12_0-1536784901.jpg" alt="" class="d-block w-50">&lt;!&ndash;class="d-block w-100">&ndash;&gt;
+          </div>
+          <div class="carousel-item">
+            <img src="https://as.com/meristation/imagenes/2019/01/08/reportajes/1546933662_826942_1546935400_noticia_normal.jpg" alt="" class="d-block w-50"> &lt;!&ndash;class="d-block w-100"&ndash;&gt;
+          </div>
+        </div>
+
+        &lt;!&ndash; Controles &ndash;&gt;
+        <a href="#slideshow" class="carousel-control-prev" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a href="#slideshow" class="carousel-control-next" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>-->
+<section class="contenedor">
+  <aside class="lateral">
+    <div class="d-flex">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Dirección de correo electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+          <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Nuevo por aqui? Registrarse</a>
+        <a class="dropdown-item" href="#">Olvidastes tu contraseña?</a>
+      </form>
+    </div>
+    <div class="menu_lateral">
+      <a href="#">GHGH</a>
+      <a href="#">FFFFFFFF</a>
+      <a href="#">JJJJJJJJJJ</a>
+      <a href="#">TTTTTTTT</a>
+      <a href="#">JJJJJJJJ</a>
+      <a href="#">BBBBBBBBB</a>
+      <a href="#">DDDDDDD</a>
+      <a href="#">WWWWWW</a>
+      <a href="#">TTTTTTT</a>
+      <a href="#">WWWWWW</a>
+    </div>
+  </aside>
+  <section class="contenido">
+    <div class="noticias">
+      <h3>Nuevas noticias</h3>
+      <div class="destacados" *ngFor="let noticianueva of noticianuevas; index as i">
+        <h5>{{noticianueva.titulo}}</h5>
+        <img src="{{noticianueva.imagen}}" alt="img" class="img_noticias">
+        <p>{{noticianueva.noticia}}</div>
+      <nav class="pagina" aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <span class="page-link">Previous</span>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item " aria-current="page">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="reseñas">
+      <h3>Nuevas reseñas</h3>
+      <div class="destacados" *ngFor="let resena of resenas; index as i">
+        <img src="{{resena.fig}}" alt="img">
+        <a href="#">{{resena.ver}}</a>
+      </div>
+      <nav class="pagina" aria-label="...">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <span class="page-link">Previous</span>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item " aria-current="page">
+      <span class="page-link">
+        2
+        <span class="sr-only">(current)</span>
+      </span>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </section>
+</section>

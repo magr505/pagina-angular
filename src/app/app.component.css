@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+.main .header {
+  align-self: flex-start;
+  width: 100%;
+}
+.main .inicio {
+  /*width: 100%;*/
+  /*min-height: 80vh;*/
+}
+.main .footer {
+  align-self: flex-end;
+}
+
+/*# sourceMappingURL=app.component.css.map */
