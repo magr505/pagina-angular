@@ -3,6 +3,13 @@
   display: flex;
   flex-direction: row;
   .carr{
+    .carousel{
+      display: block;
+      z-index: -2;
+      img{
+        height: 300px;
+      }
+    }
   }
   .lateral{
     display: flex;
@@ -16,13 +23,35 @@
       width: 100%;
       border: solid 1px rgba(120,120,120,0.2);
       padding: 5px;
+      .form-check{
+        z-index: -1;
+      }
     }
     .menu_lateral{
       width: 100%;
-      a{
+      h3{
         width: 100%;
-        display: block;
-        flex-wrap: wrap;
+        margin: 0;
+        color: #6c757d;
+        /*color: #f7f7f7;*/
+        /*background-color:  rgba(#5a6268 ,.2);*/
+      }
+      ul{
+        li{
+          width: 100%;
+          padding: 5px;
+          margin: 5px 0;
+          background: rgba(120,120,120,0.2);
+          a{
+            width: 100%;
+            display: block;
+            flex-wrap: wrap;
+            i{
+              color: #34ce57;
+              padding-right: 10px;
+            }
+          }
+        }
       }
     }
   }
@@ -45,9 +74,11 @@
         background-color:  rgba(#5a6268 ,.2);
       }
       .destacados{
+        width: 100%;
         padding: 6px;
         margin: 6px;
         border: solid 1px rgba(120,120,120,0.2);
+        flex-wrap: wrap;
         h5{
           text-align: justify;
           color: #6c757d;

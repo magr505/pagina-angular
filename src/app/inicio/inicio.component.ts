@@ -63,6 +63,16 @@ export class InicioComponent implements OnInit {
     { fig: 'assets/witcher.jpg', ver: 'ver mas'},
     { fig: 'assets/panzer.jpg', ver: 'ver mas'}
   ];
+
+  menulateral: Array<any> = [
+    { enlace: 'Zona juegos Playstation', logo: 'fas fa-gamepad size:7x', color: 'red'},
+    { enlace: 'Zona juegos Nintendo', logo: 'fas fa-gamepad size:7x'},
+    { enlace: 'Zona juegos Xbox', logo: 'fas fa-gamepad size:7x'},
+    { enlace: 'Zona juegos Otros', logo: 'fas fa-gamepad size:7x'},
+    { enlace: 'Zona Noticias', logo: 'fas fa-robot'},
+    { enlace: 'Zona Reseñas', logo: 'fas fa-users'},
+    { enlace: 'Zona videos', logo: 'fas fa-video'}
+  ];
   constructor() { }
 
   ngOnInit() {

@@ -4,8 +4,11 @@
   min-height: 100vh;
 }
 .main .header {
+  position: sticky;
+  top: 0px;
   align-self: flex-start;
   width: 100%;
+  z-index: 0;
 }
 .main .inicio {
   /*width: 100%;*/
