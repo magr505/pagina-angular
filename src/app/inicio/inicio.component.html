@@ -72,10 +72,10 @@
 </div>
     <div class="noticias">
       <h3>Nuevas noticias</h3>
-      <div class="destacados" *ngFor="let noticianueva of noticianuevas; index as i">
-        <h5>{{noticianueva.titulo}}</h5>
-        <img src="{{noticianueva.imagen}}" alt="img" class="img_noticias">
-        <p>{{noticianueva.noticia}}</div>
+      <div class="destacados" *ngFor="let noticia of noticianueva; index as i">
+        <h5>{{noticia.titulo}}</h5>
+        <img src="{{noticia.imagen}}" alt="img" class="img_noticias">
+        <p>{{noticia.noticia_corta}}</div>
       <nav class="pagina" aria-label="...">
         <ul class="pagination">
           <li class="page-item disabled">
@@ -98,9 +98,9 @@
 
     <section class="reseñas">
       <h3>Nuevas reseñas</h3>
-      <div class="destacados" *ngFor="let resena of resenas; index as i">
+      <div class="destacados" *ngFor="let resena of resenas; index as i" routerLinkActive="active">
         <img src="{{resena.fig}}" alt="img">
-        <a href="#">{{resena.ver}}</a>
+        <a [routerLink]="['/zona-noticias',i]">{{resena.ver}}</a>
       </div>
       <nav class="pagina" aria-label="...">
         <ul class="pagination">

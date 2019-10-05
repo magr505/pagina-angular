@@ -1,4 +1,5 @@
 .main{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   min-height: 100vh;
@@ -7,14 +8,18 @@
     top: 0px;
     align-self: flex-start;
     width: 100%;
-    z-index: 0;
+    z-index: 3;
+  }
+  .roter{
+    width: 100%;
   }
   .inicio{
-    /*width: 100%;*/
+    width: 100%;
     /*min-height: 80vh;*/
   }
   .footer{
     align-self: flex-end;
+    width: 100%;
   }
 }
 

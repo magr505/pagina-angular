@@ -1,0 +1,55 @@
+<section class="contenedor">
+  <aside class="lateral">
+    <div class="d-flex">
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Dirección de correo electrónico</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">
+          <small id="emailHelp" class="form-text text-muted">Nunca compartiremos su correo electrónico con nadie más.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Contraseña</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Recuérdame</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Nuevo por aqui? Registrarse</a>
+        <a class="dropdown-item" href="#">Olvidastes tu contraseña?</a>
+      </form>
+    </div>
+    <div class="menu_lateral">
+      <h3>Categorias</h3>
+      <ul>
+        <li *ngFor="let menulaterals of menulateral; index as i"><a href="#"><i class="{{menulaterals.logo}}"></i>{{menulaterals.enlace}}</a></li>
+      </ul>
+    </div>
+  </aside>
+  <section class="contenido">
+
+    <div class="noticias">
+
+        <h1>1 / ¿Qué es 3DJuegos?</h1>
+        <p>Una revista online especializada en videojuegos y líder de audiencia en España.
+          Un equipo de periodistas y profesionales a los que ante todo les encanta disfrutar con los juegos.
+          Un medio independiente donde tu opinión es muy importante y además, cuenta de verdad. Una revista
+          de videojuegos abierta de par en par a ideas nuevas y a todo tipo de jugadores. Una comunidad que se
+          construye en equipo y que gira alrededor del videojuego, la cultura del videojuego.</p>
+        <h1>2 / Requisitos del sistema</h1>
+        <p>Lectores con inquietudes que busquen contenidos editoriales, multimedia o de actualidad sobre videojuegos
+        en los que se conjugue el rigor del periodismo profesional con la filosofía y posibilidades de internet.</p>
+        <h1>3 / Opciones Multijugador</h1>
+        <p>En 3DJuegos nacimos con capacidad para acoger a todo jugador que tenga algo interesante que descubrir a los
+          demás. Somos parte de un proyecto online masivo donde lo más importante son los jugadores (lectores) y sus
+          mundos virtuales (videojuegos).</p>
+
+    </div>
+
+    <section class="reseñas">
+
+    </section>
+  </section>
+</section>

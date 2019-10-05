@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NoticiasService} from '../noticias.service';
 
 @Component({
   selector: 'app-inicio',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class InicioComponent implements OnInit {
 
   // @ts-ignore
-  noticianuevas: Array<any> = [
+  /*noticianuevas: Array<any> = [
     { titulo: 'Primeras impresiones de Borderlands 3 Campos de pruebas',
       imagen: 'https://cnet1.cbsistatic.com/img/V1A2QThEyYjtfs_X7iTgHjQshEU=/1092x0/2019/05/14/' +
         'f207d0c2-268b-4a8e-9ef8-64d9abb201c9/borderlands-3.jpg',
@@ -48,7 +49,7 @@ export class InicioComponent implements OnInit {
         ' Hunter World Iceborne, la nueva expansión, llega dentro de muy poco. Se podrá probar antes el ' +
         'juego en una beta cuyas fechas ya han sido anunciadas.'}
     ];
-
+*/
   resenas: Array<any> = [
     { fig: 'assets/astral.jpg', ver: 'ver mas'},
     { fig: 'assets/contra.jpg', ver: 'ver mas'},
@@ -69,12 +70,14 @@ export class InicioComponent implements OnInit {
     { enlace: 'Zona juegos Nintendo', logo: 'fas fa-gamepad size:7x'},
     { enlace: 'Zona juegos Xbox', logo: 'fas fa-gamepad size:7x'},
     { enlace: 'Zona juegos Otros', logo: 'fas fa-gamepad size:7x'},
-    { enlace: 'Zona Noticias', logo: 'fas fa-robot'},
-    { enlace: 'Zona Reseñas', logo: 'fas fa-users'},
+    { enlace: 'Zona Noticias', logo: 'far fa-newspaper'},
+    { link: '/zona-reseñas', enlace: 'Zona Reseñas', logo: 'fas fa-users'},
     { enlace: 'Zona videos', logo: 'fas fa-video'}
   ];
-  constructor() { }
-
+  noticianueva: any[] = [];
+  constructor(private noticia: NoticiasService) {
+    this.noticianueva = noticia.obtenerNoticias();
+  }
   ngOnInit() {
   }
 
